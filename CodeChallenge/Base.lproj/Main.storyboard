@@ -26,13 +26,13 @@
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Color" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7kB-yc-pnQ">
                                 <rect key="frame" x="20" y="149" width="335" height="40"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Cost" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VKc-U2-Qvk">
                                 <rect key="frame" x="20" y="204" width="335" height="40"/>
@@ -79,6 +79,9 @@
                                     </userDefinedRuntimeAttribute>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="clipsToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="AddMobileInfoAction:" destination="yq5-Hz-g9p" eventType="touchUpInside" id="if7-j2-3Dz"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -386,7 +389,14 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="memoryLabel" destination="2IO-Bh-V4o" id="kcl-i1-y9e"/>
+                                            <outlet property="mobileBatteryLabel" destination="QLx-XX-7hg" id="Ovf-gq-ZLQ"/>
+                                            <outlet property="mobileColorLabel" destination="n7z-JL-2nD" id="gOQ-1w-rs9"/>
+                                            <outlet property="mobileCostLabel" destination="8lH-pi-dWB" id="tTQ-e8-Fjs"/>
+                                            <outlet property="mobileNameLabel" destination="YLx-Ba-JBR" id="mWj-Gd-AJu"/>
                                             <outlet property="moreButton" destination="wDo-wV-YMZ" id="eEp-T9-ydw"/>
+                                            <outlet property="primaryCameraLabel" destination="Poj-Oe-F7D" id="iJF-Ht-wfK"/>
+                                            <outlet property="secondaryCameraLabel" destination="hqE-GF-zih" id="QAO-j2-p6y"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -413,21 +423,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q4E-CO-rfs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2054" y="641"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="VqV-aj-acq">
-            <objects>
-                <viewController id="0R7-xG-fcT" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="qh9-br-9lC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="STp-dJ-JKD"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="PaQ-bI-ewB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1931" y="1389"/>
         </scene>
         <!--Mobiles-->
         <scene sceneID="6zN-gZ-U0e">

@@ -39,8 +39,20 @@ extension UITextField {
         self.inputAccessoryView = doneToolbar
     }
     
+    func clear() {
+        self.text = ""
+    }
+    
     @objc func doneButtonAction() {
         self.resignFirstResponder()
     }
     
+}
+
+
+extension UILabel {
+    
+    func clear() {
+        self.text = ""
+    }
 }
