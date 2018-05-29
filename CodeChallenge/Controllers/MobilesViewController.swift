@@ -35,7 +35,7 @@ class MobilesViewController: UIViewController {
     }
     
     @objc func openMenu() {
-        print("Opening Menu")
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: toggleMenuKey), object: nil)
     }
 
 }

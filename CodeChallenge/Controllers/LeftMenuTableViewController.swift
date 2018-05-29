@@ -10,7 +10,15 @@ import UIKit
 
 class LeftMenuTableViewController : UITableViewController {
     
-    var menuOptions = ["Profile", "Settings", "Orders"]
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        self.tableView.tableFooterView = UIView()
+        self.tableView.isScrollEnabled = false
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
     
 }
 
@@ -19,12 +27,12 @@ class LeftMenuTableViewController : UITableViewController {
 extension LeftMenuTableViewController {
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return toggleMenuOptions.count
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath as IndexPath)
-        cell.textLabel?.text = menuOptions[indexPath.row]
+        let cell = tableView.dequeueReusableCell(withIdentifier: tooggleMenuTableViewCellIdentifier, for: indexPath as IndexPath)
+        cell.textLabel?.text = toggleMenuOptions[indexPath.row]
         return cell
     }
     

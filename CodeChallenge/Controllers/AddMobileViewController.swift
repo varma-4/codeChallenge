@@ -41,7 +41,7 @@ class AddMobileViewController: UIViewController {
     }
     
     @objc func openMenu() {
-        print("Opening Menu")
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: toggleMenuKey), object: nil)
     }
     
     func customizeTextFields() {
@@ -61,10 +61,4 @@ class AddMobileViewController: UIViewController {
         memory.addDoneButtonOnKeyboard()
     }
 
-}
-
-extension AddMobileViewController {
-    
-    
-    
 }

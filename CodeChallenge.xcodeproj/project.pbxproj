@@ -8,13 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		7DB84F005B7FD532554821D9 /* Pods_CodeChallengeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20A1ABDE5A7A83E9DFC3616E /* Pods_CodeChallengeTests.framework */; };
+		AD1C9A8120BD9BBE00C2C677 /* MobilesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C9A8020BD9BBE00C2C677 /* MobilesViewController.swift */; };
+		AD1C9A8320BD9D3B00C2C677 /* MobilesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C9A8220BD9D3B00C2C677 /* MobilesTableViewCell.swift */; };
+		AD1C9A8520BDA18200C2C677 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C9A8420BDA18200C2C677 /* Constants.swift */; };
+		AD1C9A8720BDB89700C2C677 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C9A8620BDB89700C2C677 /* ContainerViewController.swift */; };
+		AD1C9A8920BDBD8200C2C677 /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C9A8820BDBD8200C2C677 /* LeftMenuTableViewController.swift */; };
 		AD4D325220BC3D480053C8F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4D325120BC3D480053C8F8 /* AppDelegate.swift */; };
 		AD4D325720BC3D480053C8F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4D325520BC3D480053C8F8 /* Main.storyboard */; };
 		AD4D325920BC3D4B0053C8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4D325820BC3D4B0053C8F8 /* Assets.xcassets */; };
 		AD4D325C20BC3D4B0053C8F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4D325A20BC3D4B0053C8F8 /* LaunchScreen.storyboard */; };
 		AD4D326720BC3D4B0053C8F8 /* CodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4D326620BC3D4B0053C8F8 /* CodeChallengeTests.swift */; };
 		ADC5556920BC64510010E8E4 /* AddMobileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5556820BC64510010E8E4 /* AddMobileViewController.swift */; };
-		ADC5556B20BC689F0010E8E4 /* MobileTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5556A20BC689F0010E8E4 /* MobileTableViewController.swift */; };
 		ADC5557320BC71C40010E8E4 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADC5557220BC71C40010E8E4 /* Extensions.swift */; };
 		FE47174B85853D7576965DAA /* Pods_CodeChallenge.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A479DB6C580C2E03C8082AF3 /* Pods_CodeChallenge.framework */; };
 /* End PBXBuildFile section */
@@ -36,6 +40,11 @@
 		26C8D0EB6A977ED94D932BDB /* Pods-CodeChallengeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallengeTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeChallengeTests/Pods-CodeChallengeTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B875AA72A09B04475CDBCDA /* Pods-CodeChallenge.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CodeChallenge.release.xcconfig"; path = "Pods/Target Support Files/Pods-CodeChallenge/Pods-CodeChallenge.release.xcconfig"; sourceTree = "<group>"; };
 		A479DB6C580C2E03C8082AF3 /* Pods_CodeChallenge.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CodeChallenge.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD1C9A8020BD9BBE00C2C677 /* MobilesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilesViewController.swift; sourceTree = "<group>"; };
+		AD1C9A8220BD9D3B00C2C677 /* MobilesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilesTableViewCell.swift; sourceTree = "<group>"; };
+		AD1C9A8420BDA18200C2C677 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		AD1C9A8620BDB89700C2C677 /* ContainerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
+		AD1C9A8820BDBD8200C2C677 /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
 		AD4D324E20BC3D480053C8F8 /* CodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4D325120BC3D480053C8F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4D325620BC3D480053C8F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +55,6 @@
 		AD4D326620BC3D4B0053C8F8 /* CodeChallengeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodeChallengeTests.swift; sourceTree = "<group>"; };
 		AD4D326820BC3D4B0053C8F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADC5556820BC64510010E8E4 /* AddMobileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMobileViewController.swift; sourceTree = "<group>"; };
-		ADC5556A20BC689F0010E8E4 /* MobileTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobileTableViewController.swift; sourceTree = "<group>"; };
 		ADC5557220BC71C40010E8E4 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -153,7 +161,9 @@
 			isa = PBXGroup;
 			children = (
 				ADC5556820BC64510010E8E4 /* AddMobileViewController.swift */,
-				ADC5556A20BC689F0010E8E4 /* MobileTableViewController.swift */,
+				AD1C9A8020BD9BBE00C2C677 /* MobilesViewController.swift */,
+				AD1C9A8620BDB89700C2C677 /* ContainerViewController.swift */,
+				AD1C9A8820BDBD8200C2C677 /* LeftMenuTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -161,6 +171,7 @@
 		ADC5557020BC69BA0010E8E4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				AD1C9A8220BD9D3B00C2C677 /* MobilesTableViewCell.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -169,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				ADC5557220BC71C40010E8E4 /* Extensions.swift */,
+				AD1C9A8420BDA18200C2C677 /* Constants.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -346,9 +358,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADC5556920BC64510010E8E4 /* AddMobileViewController.swift in Sources */,
-				ADC5556B20BC689F0010E8E4 /* MobileTableViewController.swift in Sources */,
+				AD1C9A8920BDBD8200C2C677 /* LeftMenuTableViewController.swift in Sources */,
 				AD4D325220BC3D480053C8F8 /* AppDelegate.swift in Sources */,
+				AD1C9A8720BDB89700C2C677 /* ContainerViewController.swift in Sources */,
+				AD1C9A8120BD9BBE00C2C677 /* MobilesViewController.swift in Sources */,
+				AD1C9A8520BDA18200C2C677 /* Constants.swift in Sources */,
 				ADC5557320BC71C40010E8E4 /* Extensions.swift in Sources */,
+				AD1C9A8320BD9D3B00C2C677 /* MobilesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
