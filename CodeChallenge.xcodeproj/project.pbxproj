@@ -15,6 +15,7 @@
 		AD1C9A8920BDBD8200C2C677 /* LeftMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C9A8820BDBD8200C2C677 /* LeftMenuTableViewController.swift */; };
 		AD1C9A8B20BDC59600C2C677 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C9A8A20BDC59600C2C677 /* Mobile.swift */; };
 		AD1C9A8D20BDEABB00C2C677 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C9A8C20BDEABB00C2C677 /* ExtensionTests.swift */; };
+		AD1C9A9420BEFD1500C2C677 /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD1C9A9320BEFD1500C2C677 /* DatabaseHelper.swift */; };
 		AD4D325220BC3D480053C8F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD4D325120BC3D480053C8F8 /* AppDelegate.swift */; };
 		AD4D325720BC3D480053C8F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4D325520BC3D480053C8F8 /* Main.storyboard */; };
 		AD4D325920BC3D4B0053C8F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4D325820BC3D4B0053C8F8 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		AD1C9A8820BDBD8200C2C677 /* LeftMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftMenuTableViewController.swift; sourceTree = "<group>"; };
 		AD1C9A8A20BDC59600C2C677 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		AD1C9A8C20BDEABB00C2C677 /* ExtensionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionTests.swift; sourceTree = "<group>"; };
+		AD1C9A9320BEFD1500C2C677 /* DatabaseHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 		AD4D324E20BC3D480053C8F8 /* CodeChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD4D325120BC3D480053C8F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD4D325620BC3D480053C8F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -93,6 +95,33 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		AD1C9A8E20BEE8F900C2C677 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD1C9A8220BD9D3B00C2C677 /* MobilesTableViewCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD1C9A8F20BEF73C00C2C677 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				AD4D325D20BC3D4B0053C8F8 /* Info.plist */,
+				AD4D325520BC3D480053C8F8 /* Main.storyboard */,
+				AD4D325A20BC3D4B0053C8F8 /* LaunchScreen.storyboard */,
+				AD4D325820BC3D4B0053C8F8 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		AD1C9A9220BEFCF500C2C677 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				AD1C9A9320BEFD1500C2C677 /* DatabaseHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		AD4D324520BC3D480053C8F8 = {
 			isa = PBXGroup;
 			children = (
@@ -116,13 +145,13 @@
 		AD4D325020BC3D480053C8F8 /* CodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				ADC5557120BC71B30010E8E4 /* Resources */,
-				ADC5556C20BC69900010E8E4 /* Assets */,
-				ADC5556F20BC69AA0010E8E4 /* Controllers */,
-				ADC5556D20BC699B0010E8E4 /* Models */,
-				ADC5556E20BC69A10010E8E4 /* ViewModels */,
-				ADC5557020BC69BA0010E8E4 /* Views */,
 				AD4D325120BC3D480053C8F8 /* AppDelegate.swift */,
+				AD1C9A8F20BEF73C00C2C677 /* Assets */,
+				ADC5556F20BC69AA0010E8E4 /* Controllers */,
+				AD1C9A9220BEFCF500C2C677 /* Helpers */,
+				ADC5556D20BC699B0010E8E4 /* Models */,
+				ADC5557120BC71B30010E8E4 /* Resources */,
+				AD1C9A8E20BEE8F900C2C677 /* Views */,
 			);
 			path = CodeChallenge;
 			sourceTree = "<group>";
@@ -137,30 +166,12 @@
 			path = CodeChallengeTests;
 			sourceTree = "<group>";
 		};
-		ADC5556C20BC69900010E8E4 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				AD4D325D20BC3D4B0053C8F8 /* Info.plist */,
-				AD4D325520BC3D480053C8F8 /* Main.storyboard */,
-				AD4D325A20BC3D4B0053C8F8 /* LaunchScreen.storyboard */,
-				AD4D325820BC3D4B0053C8F8 /* Assets.xcassets */,
-			);
-			name = Assets;
-			sourceTree = "<group>";
-		};
 		ADC5556D20BC699B0010E8E4 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				AD1C9A8A20BDC59600C2C677 /* Mobile.swift */,
 			);
 			path = Models;
-			sourceTree = "<group>";
-		};
-		ADC5556E20BC69A10010E8E4 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		ADC5556F20BC69AA0010E8E4 /* Controllers */ = {
@@ -172,14 +183,6 @@
 				AD1C9A8820BDBD8200C2C677 /* LeftMenuTableViewController.swift */,
 			);
 			path = Controllers;
-			sourceTree = "<group>";
-		};
-		ADC5557020BC69BA0010E8E4 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				AD1C9A8220BD9D3B00C2C677 /* MobilesTableViewCell.swift */,
-			);
-			name = Views;
 			sourceTree = "<group>";
 		};
 		ADC5557120BC71B30010E8E4 /* Resources */ = {
@@ -369,6 +372,7 @@
 				AD4D325220BC3D480053C8F8 /* AppDelegate.swift in Sources */,
 				AD1C9A8720BDB89700C2C677 /* ContainerViewController.swift in Sources */,
 				AD1C9A8120BD9BBE00C2C677 /* MobilesViewController.swift in Sources */,
+				AD1C9A9420BEFD1500C2C677 /* DatabaseHelper.swift in Sources */,
 				AD1C9A8520BDA18200C2C677 /* Constants.swift in Sources */,
 				ADC5557320BC71C40010E8E4 /* Extensions.swift in Sources */,
 				AD1C9A8320BD9D3B00C2C677 /* MobilesTableViewCell.swift in Sources */,
@@ -535,7 +539,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D3AXA88DHR;
-				INFOPLIST_FILE = CodeChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CodeChallenge/Assets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -555,7 +559,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D3AXA88DHR;
-				INFOPLIST_FILE = CodeChallenge/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/CodeChallenge/Assets/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

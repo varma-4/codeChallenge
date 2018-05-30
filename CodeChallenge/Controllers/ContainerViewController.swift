@@ -10,7 +10,7 @@ import UIKit
 
 class ContainerViewController: UIViewController {
 
-    @IBOutlet weak var scrollView: UIScrollView!
+    @IBOutlet weak internal var scrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -41,12 +41,10 @@ class ContainerViewController: UIViewController {
     }
     
     func closeMenu(animated: Bool = true) {
-        // Set proper scrollview content offset-x to hide Menu
         scrollView.setContentOffset(CGPoint(x: toggleMenuWidth, y: 0), animated: animated)
     }
     
     func openMenu() {
-        // Set proper scrollview content offset-x to Show Menu
         scrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
     }
     

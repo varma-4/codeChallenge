@@ -32,16 +32,12 @@ class MobilesViewController: UIViewController {
     }
     
     func fetchMobileInfoFromRealm() {
-        do {
-            let realm = try Realm()
-            mobileInfoArray = realm.objects(Mobile.self)
-            DispatchQueue.main.async {
-                self.mobilesTableView.reloadData()
-            }
-        } catch {
-            print(error.localizedDescription)
+        mobileInfoArray = DatabaseHelper.sharedInstance.fetchRecordsFromRealm()
+        // Reset indexPathsModified dictionary
+        indexPathsModified.removeAll()
+        DispatchQueue.main.async {
+            self.mobilesTableView.reloadData()
         }
-        
     }
     
     func addNaviagtionBarButtons() {

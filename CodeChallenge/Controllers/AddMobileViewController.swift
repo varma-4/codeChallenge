@@ -77,6 +77,10 @@ class AddMobileViewController: UIViewController {
     }
 
     @IBAction func AddMobileInfoAction(_ sender: Any) {
+        validateAndInsertData()
+    }
+    
+    internal func validateAndInsertData() {
         // CheckforValidations
         let alert = UIAlertController(title: Alert.validationErrorTitle, message: Alert.validationErrorMessage, preferredStyle: .alert)
         let alertAction = UIAlertAction(title: Alert.alertActionOK, style: .default) { [weak self](_) in
@@ -84,7 +88,7 @@ class AddMobileViewController: UIViewController {
             self.clearAllTextFields()
         }
         alert.addAction(alertAction)
-        if validateTextFieldsInput() {
+        if !doTextFieldsHaveValidData() {
             self.present(alert, animated: true, completion: nil)
             return
         }
@@ -93,25 +97,16 @@ class AddMobileViewController: UIViewController {
         
         let mobile = Mobile(name: name, color: color, cost: cost, battery: battery, primCamera: primCamera, secCamera: secCamera, memory: memory)
         
-        do {
-            let realm = try Realm()
-            try realm.write {
-                realm.add(mobile)
-            }
-            
-            //Alert User about data insertion & reset textfields
-            alert.message = Alert.successMessage
-            alert.title = Alert.successTitle
-            self.present(alert, animated: true) {
-                self.clearAllTextFields()
-            }
-        } catch {
-           print(error.localizedDescription)
+        DatabaseHelper.sharedInstance.insert(mobileInfo: mobile)
+        //Alert User about data insertion & reset textfields
+        alert.message = Alert.successMessage
+        alert.title = Alert.successTitle
+        self.present(alert, animated: true) {
+            self.clearAllTextFields()
         }
-        
     }
     
-    func validateTextFieldsInput() -> Bool {
+    func doTextFieldsHaveValidData() -> Bool {
         if nameAndMobile.text?.count == 0 ||
             color.text?.count == 0 ||
             cost.text?.count == 0 ||
@@ -119,9 +114,9 @@ class AddMobileViewController: UIViewController {
             primaryCamera.text?.count == 0 ||
             secondaryCamera.text?.count == 0 ||
             memory.text?.count == 0 {
-            return true
+            return false
         }
-        return false
+        return true
     }
     
     func clearAllTextFields() {
@@ -150,12 +145,21 @@ extension AddMobileViewController: UITextFieldDelegate {
             textField == secondaryCamera ||
             textField == memory {
             topConstraintToSuperView.constant = addMobileTopConstraintRemoval
+            animateViewForLayoutChanges()
         }
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
         // Decrease Constraint height
         topConstraintToSuperView.constant = addMobileTopConstraintAdditon
+        animateViewForLayoutChanges()
+    }
+    
+    func animateViewForLayoutChanges() {
+        UIView.animate(withDuration: 0.5, animations: { [weak self] in
+            guard let  `self` = self else { return }
+            self.view.layoutIfNeeded()
+        }, completion: nil)
     }
     
 }

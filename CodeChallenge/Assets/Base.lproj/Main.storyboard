@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -14,7 +13,7 @@
         <!--Add Mobile-->
         <scene sceneID="qCc-J8-kwI">
             <objects>
-                <viewController id="yq5-Hz-g9p" customClass="AddMobileViewController" customModule="CodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AddMobileVC" id="yq5-Hz-g9p" customClass="AddMobileViewController" customModule="CodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="9dF-bX-fAM">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -138,7 +137,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="kcw-rS-0T3">
             <objects>
-                <tabBarController id="CJs-tb-S4K" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="tabBarVC" id="CJs-tb-S4K" sceneMemberID="viewController">
                     <size key="freeformSize" width="375" height="667"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="o3Y-RA-WXn">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
@@ -176,7 +175,7 @@
         <!--Mobiles-->
         <scene sceneID="3Xd-RI-L59">
             <objects>
-                <viewController id="d5Y-Tt-jIK" customClass="MobilesViewController" customModule="CodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MobilesVC" id="d5Y-Tt-jIK" customClass="MobilesViewController" customModule="CodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BNX-OX-KJO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -310,7 +309,7 @@
                                                                 <action selector="moreButtonAction:" destination="Rxg-ft-awu" eventType="touchUpInside" id="e2w-mg-oGR"/>
                                                             </connections>
                                                         </button>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGw-vz-0XC">
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MGw-vz-0XC">
                                                             <rect key="frame" x="10" y="43" width="47" height="20"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="20" id="U9x-MO-WRL"/>
@@ -446,7 +445,7 @@
         <!--Container View Controller-->
         <scene sceneID="0Pn-F5-F9I">
             <objects>
-                <viewController id="OJ9-H0-XeE" customClass="ContainerViewController" customModule="CodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ContainerVC" id="OJ9-H0-XeE" customClass="ContainerViewController" customModule="CodeChallenge" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1uj-wZ-ZVt"/>
                         <viewControllerLayoutGuide type="bottom" id="dL9-L0-u8q"/>

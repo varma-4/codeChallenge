@@ -17,7 +17,7 @@ var toggleMenuOptions = ["Profile", "Settings", "Orders"]
 var toggleMenuKey = "toggleMenu"
 var toggleMenuWidth: CGFloat = 260
 
-var addMobileTopConstraintRemoval: CGFloat = -60
+var addMobileTopConstraintRemoval: CGFloat = -100
 var addMobileTopConstraintAdditon: CGFloat = 30
 
 var separatorSpace = " "
