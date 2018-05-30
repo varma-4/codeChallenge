@@ -12,12 +12,14 @@ pod install
 
 # Screenshots
 
-![Alt text](Screenshots/1.png?raw=true "Menu")
+SlideInMenu                                     |  AddMobileInfo
+:----------------------------------------------:|:-------------------------:
+![Alt text](Screenshots/1.png?raw=true "Menu")  |  ![Alt text](Screenshots/2.png?raw=true "Add Mobile")
 
-![Alt text](Screenshots/2.png?raw=true "Add Mobile")
+AddMobileInfo                                     |  MobilesTableView
+:----------------------------------------------:|:-------------------------:
+![Alt text](Screenshots/3.png?raw=true "Menu")  |  ![Alt text](Screenshots/4.png?raw=true "Add Mobile")
 
-![Alt text](Screenshots/3.png?raw=true "Add Mobile")
-
-![Alt text](Screenshots/4.png?raw=true "Mobiles View")
-
-![Alt text](Screenshots/5.png?raw=true "Mobile View")
+MobilesTableView                                     |
+:----------------------------------------------:|
+![Alt text](Screenshots/5.png?raw=true "Menu")  |
